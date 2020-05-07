@@ -8,7 +8,7 @@
 #include "tca_point_facility_catchment_areas.h"
 #include "tca_mp_facility_catchment_areas.h"
 using namespace tca;
-
+// for test
 class TCAGeneration : public QDialog
 {
 	Q_OBJECT
