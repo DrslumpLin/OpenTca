@@ -50,8 +50,8 @@ A facility can be represented as a point-based facility (e.g., a station represe
 
 For those who have no interest in programing, we provide a simple user interface for you to run the program.
 Please follow steps below:
-1. Download folder "Standalone Exe Program" and copy it to a 64-bit Windows PC.
-2. Open the folder and double-click the logo "TCAGeneration.exe", you will see a GUI as below. 
+1) Download folder "/Standalone Exe Program" and copy it to a 64-bit Windows PC.
+2) Open the folder and double-click the logo "TCAGeneration.exe", you will see a GUI as below. 
 Please follow the description to generate the cacthment areas. 
 
 ![TCA_GUI_instruction](/img/instruction_of_the_GUI.png "the GUI instructions")
@@ -67,22 +67,22 @@ For those who want to rebuild the program on their PCs.
 3) CGAL(4.13) https://www.cgal.org/download/windows.html
 4) Qt (5.13.2) https://www.qt.io
 
-**For windows users:**
+**For windows users:**  
 if you rebuild the program in visual studio, please remember to configure the 
 corresponding libraries in your VS program.  
-(I build the program with Visual studio s2017 on a 64-bit Windows PC.)
+(I build the program with Visual studio 2017 on a 64-bit Windows PC.)
 
-**For linux users:**
+**For linux users:**  
 you need to install all the external libraries and rebuild the program.  
 Unfortunately, I havenot find time to test the code in a Linux PC.
 
 ## 5. Sample data
 
-We provide two datasets for those who want to test the program, both dataset are download
-from Openstreetmap(OSM). The test area is part of Munich, Germany. 
+We provide two datasets for those who want to test the program, both datasets are download
+from Openstreetmap(OSM). The test area is a part of Munich, Germany. Please see the folder "/Test data"
 
-A shp file of undirected road network: 
-A shp file of point-based facilities: 
+*road_network.shp*: a shp file of undirected road network
+*subway_stations.shp*: a shp file of point-based facilities
 
 ## 6. Contributors
 
