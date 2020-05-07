@@ -1,0 +1,25 @@
+设置1：附加包含目录：
+# 注意，这里必须将boost的包含目录必须是放在最上面，要不然编译会因为重复调用出现无限个错误， 
+# 比如其中的一个错误就是 “error C2143: 语法错误 : 缺少在“*”的前面)”
+# 同时可以看到在程序中boost 后面的成员会提示的错误，比如 "geometry 不是 boost 的成员变量"
+D:\boost_1_69_0            
+D:\GDAL_library\release-1911-x64-gdal-2-3-2-mapserver-7-2-1-libs\include
+
+D:\dev\CGAL-4.13\auxiliary\gmp\include
+D:\dev\CGAL-4.13\include
+
+设置2：链接器-附加库目录
+D:\boost_1_69_0\lib64-msvc-14.1
+D:\GDAL_library\release-1911-x64-gdal-2-3-2-mapserver-7-2-1-libs\lib
+D:\dev\CGAL-4.13\build\lib
+
+设置3：连接器-附加依赖项
+gdal_i.lib
+CGAL-vc140-mt-gd-4.13.lib
+D:\dev\CGAL-4.13\auxiliary\gmp\lib\libgmp-10.lib
+D:\dev\CGAL-4.13\auxiliary\gmp\lib\libmpfr-4.lib
+
+设置4：将dll拷贝到程序的Debug或者release 当中
+其中boost的dll 已经加入到了环境变量当中
+GDAL的dll也已经加入到了环境变量当中
+Cgal的dll也已经纳入到环境变量当中

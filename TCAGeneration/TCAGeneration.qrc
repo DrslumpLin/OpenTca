@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/TCAGeneration">
+        <file>Resources/TCAorange.ico</file>
+    </qresource>
+</RCC>
