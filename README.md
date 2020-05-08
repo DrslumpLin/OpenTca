@@ -3,7 +3,7 @@
 ## 1. Background
 This project is used for generating transit catchment areas (TCA) along road networks. Transit catchment areas are also known as transit service areas. A catchment/service area is a buffer area around a facility, see below for an example. 
 
-![TCA_example](/img/illustration_of_TCA.png "A transit catchment areas")
+![TCA_example](/img/illustration_of_TCA.png "A transit catchment area")
 
 ## 2. Functions and IO
 
@@ -60,17 +60,17 @@ if you rebuild the program in visual studio, please remember to configure the
 corresponding libraries in your VS program.  
 (I build the program with Visual studio s2017 on a 64-bit Windows PC.)
 
-**For linux users:**
+**For Linux users:**
 you need to install all the external libraries and rebuild the program.  
 Unfortunately, I havenot find time to test the code in a Linux PC.
 
 ## 5. Sample data
 
-We provide two datasets for those who want to test the program, both dataset are download
-from Openstreetmap(OSM). The test area is part of Munich, Germany. 
+We provide two datasets for those who want to test the program, both datasets are download
+from Openstreetmap(OSM). The test area is part of Munich, Germany. please see the folder "./Test data"
 
-A shp file of undirected road network: 
-A shp file of point-based facilities: 
+*road_network.shp*: a shp file of undirected road network
+*subway_stations.shp*: a shp file of point-based facilities
 
 ## 6. Contributors
 
