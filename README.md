@@ -2,7 +2,7 @@
 
 ## 1. Background
 This project is used for generating transit catchment areas (TCA) along road networks. Transit catchment areas are also known as transit service areas.  
-Given a facility and with a cut-off distance, its catchment/service area is a buffer area along road network, where the distance from any point within the catchment area is less than or equal to the cut-off distance.  
+Given a facility with a cut-off distance, its catchment/service area is a buffer area along road network, where the distance from any point within the catchment area is less than or equal to the cut-off distance.  
 See below for an example. 
 
 ![TCA_example](/img/illustration_of_TCA.png "A transit catchment area")
@@ -96,15 +96,15 @@ diao.lin@tum.de
 ## Appendix
 
 A road network with correct topology information is very important for generating correct transit catchment area.
-It is common for researchers to use the road network provided by OSM. Below are some practical suggestions for you.
+It is common for researchers to use the road network provided by OSM. Below are some practical suggestions.
 1. download OSM road network with topology information by using [OSMnx](https://github.com/gboeing/osmnx)
 2. The data quality of OSM data can be very different depending on the study area. Therefore, it is necessary for users
-to check the correctiveness of the obtianed road topology. You can use [OpenJUMP](http://www.openjump.org/) to check some common issues:  
+to check the correctness of the obtained road topology. You can use [OpenJUMP](http://www.openjump.org/) to check some common issues:  
       a. duplicated roads (some roads occur more than once, you can delete the duplicated roads using OpenJUMP)  
-      b. missing intersections (two roads intersect with each other, but there are not connnected)  
+      b. missing intersections (two roads intersect with each other, but there are not connected)  
 3. In case you find a lot of missing intersections in your data, we provide you a tool to rebuild the road network topology.
 please download the tool: [TopoBuilder](https://gitlab.com/Drsulmp/topobuilder). 
-Note, this tool can be used to build undirected road network. For those who want to build a direct road network, you may need to add the missing
+Note, this tool can be used to build the undirected road network. For those who want to build a direct road network, you may need to add the missing
 intersection nodes manually.
 
 
