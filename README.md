@@ -9,11 +9,13 @@ See below for an example.
 
 ## 2. Functions and IO
 
+`All the input shpfiles should have a local coordinate system (i.e. meter as the unit). The program does not accept shapefile with WGS84 coordinates (i.e. latitude and longitude). `
+
 ### Input:
 
 **Road network (shapefile of linestrings)**
 
-The road network should already include topology information (for those who have no idea on how to build a road network topology, see appendix).  
+The road network should already include topology information (for those who have no idea on how to build a road network topology, see [Appendix](#appendix)).  
 The road network can be an undirected or directed road network.  
 * *Undirected road network*: users need to specify the fields of "ID", "source", and "target"  
 * *Directed road network*: users need to specify the fields of "ID", "source", "target " and "direction"  
@@ -90,3 +92,21 @@ from Openstreetmap(OSM). The test area is a part of Munich, Germany. Please see 
 
 Diao Lin, a Ph.D. candidate at Chair of Cartography, Technical University of Munich  
 diao.lin@tum.de
+
+## Appendix
+
+A road network with correct topology information is very important for generating correct transit catchment area.
+It is common for researchers to use the road network provided by OSM. Below are some practical suggestions for you.
+1. download OSM road network with topology information by using [OSMnx](https://github.com/gboeing/osmnx)
+2. The data quality of OSM data can be very different depending on the study area. Therefore, it is necessary for users
+to check the correctiveness of the obtianed road topology. You can use [OpenJUMP](http://www.openjump.org/) to check some common issues:  
+      a. duplicated roads (some roads occur more than once, you can delete the duplicated roads using OpenJUMP)  
+      b. missing intersections (two roads intersect with each other, but there are not connnected)  
+3. In case you find a lot of missing intersections in your data, we provide you a tool to rebuild the road network topology.
+please download the tool: [TopoBuilder](https://gitlab.com/Drsulmp/topobuilder). 
+Note, this tool can be used to build undirected road network. For those who want to build a direct road network, you may need to add the missing
+intersection nodes manually.
+
+
+
+
