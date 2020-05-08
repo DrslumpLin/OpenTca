@@ -9,30 +9,42 @@ This project is used for generating transit catchment areas (TCA) along road net
 
 ### Input:
 
-**Road network** (shp file of linestrings)
-```
+**Road network (shp file of linestrings)**
+
 The road network should already include the topology information.
-The road network can be a undirected or directed road network.
-For undirected road network: users need to specify the fileds of "ID", "source", "target"
-For directed road network: users need to specify the fileds of "ID", "source", "target " and "direction"
-```
-**Facility** (shp file of points)
-```
-The facility can be represented as point-based facility(e.g., station center) or multiple-point-based (MP-based) facility (e.g., station entrances).
-For point-based facility: users need to specify the fileds of "ID" and "cut-off"
-For Mp-based facility: users need to specify the fileds of "ID", "cut-off" and "label".
-```
+The road network can be a undirected or directed road network.  
+* *Undirected road network*: users need to specify the fileds of "ID", "source", "target"  
+* *Directed road network*: users need to specify the fileds of "ID", "source", "target " and "direction"  
+
+|Field|Type of data|Instruction|
+|----|-----|-----|
+|ID|int/string|id of an edge|
+|source|int/string|source node id of an edge|
+|target|int/string|target node id of an edge|
+|direction|int|direction of an edge, only used for directed road network. 0: double direction, 1:  source to target, 2: target to source|
+
+**Facility (shp file of points)**
+
+A facility can be represented as a point-based facility (e.g., a station represented as itsstation center) or a multiple-point based (MP-based) facility (e.g., a station represented as its entrances).
+* *Point-based facility*: users need to specify the fileds of "ID" and "cut-off"
+* *MP-based facility*: users need to specify the fileds of "ID", "cut-off" and "label".
+
+|Field|Type of data|Instruction|
+|----|-----|-----|
+|ID|int/string|id of facility|
+|cut-off|double|the cut-off distance of a facility|
+|label|int/string|the facility label, only used for MP-based facilties|
+
+
 **Parameters**
-```
-Nearest point searching radius: the radius to search the nearest network edges 
-Unified cut-off: if all the facilities have the same cut-off distance
-```
+
+* *Nearest point searching radius*: the radius to search the nearest network edges of facilties
+* *Unified cut-off*: if all the facilities have the same cut-off distance, then this unified distance need to be specified
 
 ### Output:
-```
-1) accessibile edges of facilities (shp file of linestrings) 
-2) cacthment areas of facilities (shp file of polygons) 
-```
+
+* accessibile edges of facilities (shp file of linestrings) 
+* cacthment areas of facilities (shp file of polygons) 
 
 ## 3. Usage:standalone program
 
