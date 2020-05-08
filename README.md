@@ -15,12 +15,12 @@ See below for an example.
 
 **Road network (shapefile of linestrings)**
 
-The road network should already include topology information (for those who have no idea on how to build a road network topology, see [Appendix](#appendix)).  
+The road network should already include topology information (for more information on how to build a road network topology, see [Appendix](#appendix)).  
 The road network can be an undirected or directed road network.  
 * *Undirected road network*: users need to specify the fields of "ID", "source", and "target"  
 * *Directed road network*: users need to specify the fields of "ID", "source", "target " and "direction"  
 
-|Field|Type of data|Instruction|
+|Field|Accepted data type|Instruction|
 |----|-----|-----|
 |ID|int/string|id of an edge|
 |source|int/string|source node id of an edge|
@@ -33,7 +33,7 @@ A facility can be represented as a point-based facility (e.g., a station represe
 * *Point-based facility*: users need to specify the fields of "ID" and "cut-off"
 * *MP-based facility*: users need to specify the fields of "ID", "cut-off" and "label"
 
-|Field|Type of data|Instruction|
+|Field|Accepted data type|Instruction|
 |----|-----|-----|
 |ID|int/string|id of facility|
 |cut-off|double|the cut-off distance of a facility|
@@ -54,9 +54,9 @@ A facility can be represented as a point-based facility (e.g., a station represe
 
 For those who have no interest in programming, we provide a simple user interface for you to run the program.
 Please follow steps below:
-1) Download folder "/Standalone Exe Program" and copy it to a 64-bit Windows PC.
+1) Download folder [Standalone Exe Program](./Standalone Exe Program) and copy it to a 64-bit Windows PC.
 2) Open the folder and double-click the logo "TCAGeneration.exe", you will see a GUI as below. 
-Please follow the description to generate the catchment areas. 
+Please follow the description below to generate the catchment areas. 
 
 ![TCA_GUI_instruction](/img/instruction_of_the_GUI.png "the GUI instructions")
 
@@ -83,7 +83,7 @@ Unfortunately, I have not find time to test the code in a Linux PC.
 ## 5. Sample data
 
 We provide two datasets for those who want to test the program, both datasets are download
-from Openstreetmap(OSM). The test area is a part of Munich, Germany. Please see the folder "/Test data"
+from Openstreetmap(OSM). The test area is a part of Munich, Germany. Please see the folder [Test data](./Test data)
 
 *road_network.shp*: a shapefile of undirected road network  
 *subway_stations.shp*: a shapefile of point-based facilities
@@ -95,7 +95,7 @@ diao.lin@tum.de
 
 ## Appendix
 
-A road network with correct topology information is very important for generating correct transit catchment area.
+A road network with correct topology information is very important for generating correct transit catchment areas.
 It is common for researchers to use the road network provided by OSM. Below are some practical suggestions.
 1. download OSM road network with topology information by using [OSMnx](https://github.com/gboeing/osmnx)
 2. The data quality of OSM data can be very different depending on the study area. Therefore, it is necessary for users
