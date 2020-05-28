@@ -9,7 +9,7 @@ See below for an example.
 
 ## 2. Functions and IO
 
-`All the input shpfiles should have a local coordinate system (i.e. meter as the unit). The program does not accept shapefile with WGS84 coordinates (i.e. latitude and longitude). `
+`All the input shapefiles should have a local coordinate system (i.e. meter as the unit). The program does not accept shapefile with WGS84 coordinates (i.e. latitude and longitude). `
 
 ### Input:
 
@@ -47,13 +47,13 @@ A facility can be represented as a point-based facility (e.g., a station represe
 
 ### Output:
 
-* accessibile edges of facilities (shapefile of linestrings) 
+* accessible edges of facilities (shapefile of linestrings) 
 * catchment areas of facilities (shapefile of polygons) 
 
 ## 3. Usage: standalone program
 
 For those who have no interest in programming, we provide a simple user interface for you to run the program.
-Please follow steps below:
+Please follow the steps below:
 1) Download folder [Standalone Exe Program](./Standalone Exe Program) and copy it to a 64-bit Windows PC.
 2) Open the folder and double-click the logo "TCAGeneration.exe", you will see a GUI as below. 
 Please follow the description below to generate the catchment areas. 
@@ -66,7 +66,7 @@ Please follow the description below to generate the catchment areas.
 For those who want to rebuild the program on their PCs. 
 
 **External libraries:**
-1) GDAL (2.3.2) prebulit library for windows: http://www.gisinternals.com/query.html?content=filelist&file=release
+1) GDAL (2.3.2) prebuilt library for windows: http://www.gisinternals.com/query.html?content=filelist&file=release
 2) Boost (1.6.9) prebuilt library for windows: https://sourceforge.net/projects/boost/files/boost-binaries/1.69.0/
 3) CGAL(4.13) https://www.cgal.org/download/windows.html
 4) Qt (5.13.2) https://www.qt.io (Qt is optional, depending on if you want a GUI)
@@ -74,7 +74,7 @@ For those who want to rebuild the program on their PCs.
 **For Windows users:**  
 if you rebuild the program in visual studio, please remember to configure the 
 corresponding libraries in your VS program.  
-(I build the program with Visual studio 2017 on a 64-bit Windows PC.)
+(I build the program with Visual Studio 2017 on a 64-bit Windows PC.)
 
 **For Linux users:**  
 you need to install all the external libraries and rebuild the program.  
