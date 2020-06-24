@@ -60,6 +60,7 @@ Please follow the description below to generate the catchment areas.
 
 ![TCA_GUI_instruction](/img/instruction_of_the_GUI.png "the GUI instructions")
 
+note: We have successfully tested the TCAGeneration.exe in several 64-bit window10 PCs. Nevertheless, if you get a hint of missing DLL files during the opening of TCAGeneration.exe, you can find them under this link https://drive.google.com/drive/folders/1wq4Pkzn4j4egdiXRxGFxsGFKbhbkwdlM?usp=sharing 
 
 ## 4. Usage: rebuild the program
 
