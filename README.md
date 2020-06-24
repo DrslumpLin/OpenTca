@@ -74,17 +74,17 @@ if you rebuild the program in visual studio, please remember to configure the
 corresponding libraries in your VS program.  
 (I build the program with Visual studio 2017 on a 64-bit Windows PC.)
 
-**For Linux users:**  
+**For linux users:**
 you need to install all the external libraries and rebuild the program.  
 Unfortunately, I have not find time to test the code in a Linux PC.  
 
 ## 5. Sample data
 
-We provide two datasets for those who want to test the program, both datasets are download
-from Openstreetmap(OSM). The test area is a part of Munich, Germany. Please see the folder "/Test data"
+We provide two datasets for those who want to test the program, both dataset are download
+from Openstreetmap(OSM). The test area is part of Munich, Germany. 
 
-*road_network.shp*: a shapefile of undirected road network  
-*subway_stations.shp*: a shapefile of point-based facilities
+A shp file of undirected road network: 
+A shp file of point-based facilities: 
 
 ## 6. Contributors
 
