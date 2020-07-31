@@ -94,6 +94,8 @@ from Openstreetmap(OSM). The test area is a part of Munich, Germany. Please see 
 Diao Lin, a Ph.D. candidate at Chair of Cartography, Technical University of Munich  
 diao.lin@tum.de
 
+Lin, Diao; Zhu, Ruoxin; Yang, Jian; Meng, Liqiu: An Open-Source Framework of Generating Network-Based Transit Catchment Areas by Walking. ISPRS International Journal of Geo-Information 9 (8), 2020, 467
+
 ## Appendix
 
 A road network with correct topology information is very important for generating correct transit catchment areas.
