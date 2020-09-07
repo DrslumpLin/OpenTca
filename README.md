@@ -1,3 +1,5 @@
+The original codes are published in: https://github.com/DrslumpLin/OpenTca
+
 # TCAGeneration
 
 ## 1. Background
@@ -95,8 +97,6 @@ Diao Lin, a Ph.D. candidate at Chair of Cartography, Technical University of Mun
 diao.lin@tum.de
 
 Lin, Diao; Zhu, Ruoxin; Yang, Jian; Meng, Liqiu: An Open-Source Framework of Generating Network-Based Transit Catchment Areas by Walking. ISPRS International Journal of Geo-Information 9 (8), 2020, 467
-
-The original codes are published in: https://gitlab.com/Drsulmp/tcageneration
 
 ## Appendix
 
